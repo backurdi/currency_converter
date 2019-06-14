@@ -1,1 +1,130 @@
+*{
+    display: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#05BF96, #008466);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dollar{
+    position: absolute;
+    font-size: 400px;
+    color: #219c81;
+    opacity: 0.8;
+    z-index: -1;
+    right: 20px;
+    transform: rotate(10deg);
+}
+.euro{
+    position: absolute;
+    font-size: 350px;
+    color: #3eb59b;
+    opacity: 0.8;
+    z-index: -1;
+    left: 50px;
+    top: 10px;
+    transform: rotate(-150deg);
+}
+.pound{
+    position: absolute;
+    font-size: 400px;
+    color: #2bb395;
+    opacity: 0.8;
+    z-index: -1;
+    right: 500px;
+    bottom: 0px;
+    transform: rotate(-20deg)
+}
+
+header h1{
+    color: #fff;
+    margin: 20px 0 20px 0;
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+.App{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr; 
+    text-align: center;
+    padding: 200px 0 100px 0;
+}
+
+.equal-sign{
+    font-size: 40px;
+    color: #fff;
+    padding-top: 30px;
+
+}
+
+select{
+    background-color: #fff;
+    width: 70%;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 60%;
+    height: 33px;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+.currency-box{
+    margin-bottom: 20px;
+}
+
+.date{
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.date input{
+    width: 25%;
+}
+
+.date h3{
+    display: block;
+    color: #008466;
+    padding: 8px 20px;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.date button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.date button:hover{
+    background: #fff;
+    color: #037d18;
+}
